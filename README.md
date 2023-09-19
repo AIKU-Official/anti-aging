@@ -20,16 +20,12 @@ AIKU 2023-Summer Project: Anti-Aging
   - input size $256\times 256$에 맞춰, cropped image를 중앙에 두고, 사방에 검은색으로 빈 공간을 채워 넣어 sharp dataset 생성.
   - sharp dataset에 Gaussian blur 레이어를 적용하여 blur dataset 생성
     - Why Gaussian Blur?
+      - Gaussian blur :  Gaussian distribution 갖는 커널을 적용한 블러. 분포함수처럼 커널의 가운데 값이 크고 중앙에서 멀어질수록 값이 작아지는 양상을 보임.
+      - Box blur : box 형태로 이미지를 블러처리. (~모자이크 픽셀)
+      - Motion blur : 이미지가 특정 방향으로 움직이는 것과 같은 효과를 주는 블러.
+      - ⇒ 우리가 해결하고자 하는 task는 대체로 가우시안 블러된 이미지를 목적으로 함.
 
-            ![Various Blur Techniques](assets/various-blur.png)
-
-            ✔️ Gaussian blur :  Gaussian distribution 갖는 커널을 적용한 블러. 분포함수처럼 커널의 가운데 값이 크고 중앙에서 멀어질수록 값이 작아지는 양상을 보임.
-
-            ✔️ Box blur : box 형태로 이미지를 블러처리. (~모자이크 픽셀)
-
-            ✔️ Motion blur : 이미지가 특정 방향으로 움직이는 것과 같은 효과를 주는 블러.
-
-            ⇒ 우리가 해결하고자 하는 task는 대체로 가우시안 블러된 이미지를 목적으로 함.
+![Various Blur Techniques](assets/various-blur.png)
 
 ## 3. Attempts
 
