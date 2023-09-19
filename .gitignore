@@ -1,4 +1,8 @@
 !data/Website_Screenshots/
+r2attunet_train/data/*
+!r2attunet_train/data/.gitkeep
+r2attunet_train/logs/*
+!r2attunet_train/logs/.gitkeep
 
 # Created by https://www.toptal.com/developers/gitignore/api/linux,macos,windows,visualstudiocode,python
 # Edit at https://www.toptal.com/developers/gitignore?templates=linux,macos,windows,visualstudiocode,python
